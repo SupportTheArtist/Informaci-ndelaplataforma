@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support The Artist — Waitlist</title>
+
+<style>
+:root{
+  --bg:#050b14;
+  --bg-soft:#0a1626;
+  --electric:#2fdcff;
+  --electric-soft:rgba(47,220,255,.15);
+  --text:#e6f1ff;
+  --muted:#9bb3cc;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Arial;
+  background:radial-gradient(circle at top, #0a1c33 0%, var(--bg) 60%);
+  color:var(--text);
+  line-height:1.6;
+}
+
+section{
+  max-width:1200px;
+  margin:0 auto;
+  padding:100px 24px;
+}
+
+h1,h2,h3{
+  font-weight:600;
+  letter-spacing:-0.02em;
+}
+
+h1{
+  font-size:clamp(2.2rem,4vw,3.5rem);
+  margin-bottom:24px;
+}
+
+h2{
+  font-size:clamp(1.6rem,3vw,2.4rem);
+  margin-bottom:16px;
+}
+
+h3{
+  font-size:1.1rem;
+  margin-bottom:8px;
+  color:var(--electric);
+}
+
+p{
+  color:var(--muted);
+  max-width:900px;
+}
+
+.hero{
+  min-height:90vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.glow{
+  color:var(--electric);
+  text-shadow:0 0 20px var(--electric-soft);
+}
+
+.divider{
+  width:100%;
+  height:1px;
+  background:linear-gradient(90deg,transparent,var(--electric),transparent);
+  margin:80px 0;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:32px;
+}
+
+.card{
+  background:linear-gradient(180deg,var(--bg-soft),transparent);
+  border:1px solid rgba(255,255,255,.05);
+  padding:28px;
+  border-radius:16px;
+  backdrop-filter:blur(6px);
+  transition:transform .4s ease, box-shadow .4s ease;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 0 40px var(--electric-soft);
+}
+
+.layer{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all .8s ease;
+}
+
+.layer.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.department{
+  margin-top:48px;
+}
+
+ul{
+  list-style:none;
+  margin-top:12px;
+}
+
+li{
+  margin-bottom:6px;
+  color:var(--muted);
+}
+
+footer{
+  padding:80px 24px;
+  text-align:center;
+  color:var(--muted);
+  font-size:.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero layer">
+  <h1>Support <span class="glow">The Artist</span></h1>
+  <p>
+    La primera herramienta que gestiona <strong>todos los aspectos que envuelven la obra de un músico</strong>,
+    potenciada por inteligencia artificial.
+  </p>
+  <p style="margin-top:16px">
+    Un nuevo modelo: el poder de un sello discográfico,
+    <strong>sin cláusulas, sin retenciones y sin intermediarios</strong>.
+  </p>
+</section>
+
+<div class="divider"></div>
+
+<section class="layer">
+  <h2>Un sello que trabaja para ti</h2>
+  <p>
+    Aquí el artista autofinancia su obra y utiliza solo lo que necesita.
+    El control vuelve al creador.
+    Más tiempo para crear, menos tiempo gestionando caos.
+  </p>
+</section>
+
+<div class="divider"></div>
+
+<section class="layer">
+  <h2>Diseñado por capas</h2>
+  <p>
+    Support The Artist está estructurado como una empresa real,
+    construida desde fuera hacia dentro.
+  </p>
+
+  <div class="grid department">
+
+    <div class="card">
+      <h3>Coordinación</h3>
+      <p>
+        Dirección general del proyecto artístico.
+        Estrategia, visión, equipo y toma de decisiones.
+      </p>
+      <ul>
+        <li>Team & KPIs</li>
+        <li>Misión y objetivos</li>
+        <li>DAFO inteligente</li>
+        <li>Canvas de negocio</li>
+        <li>Tareas, visión y cultura</li>
+        <li>Análisis general del proyecto</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Producción</h3>
+      <p>
+        Todo lo necesario para que el arte se materialice con coherencia y calidad.
+      </p>
+      <ul>
+        <li>Gestión de producciones</li>
+        <li>Generador de imágenes con IA</li>
+        <li>Normalización de audio</li>
+        <li>Meetings y transcripciones</li>
+        <li>Prescripts y pitch audiovisual</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Marketing & Ventas</h3>
+      <p>
+        Exposición, estrategia y retorno.
+        Datos reales, no intuiciones.
+      </p>
+      <ul>
+        <li>Redes sociales & insights</li>
+        <li>Social feed con créditos</li>
+        <li>Eventos y colaboraciones</li>
+        <li>SEM asistido por IA</li>
+        <li>Análisis de ROI</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Finanzas</h3>
+      <p>
+        Entender el dinero para sostener el proyecto a largo plazo.
+      </p>
+      <ul>
+        <li>Balance inteligente</li>
+        <li>Consultas financieras con IA</li>
+        <li>Estrategias de diversificación</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Legalidad & Propiedad Intelectual</h3>
+      <p>
+        Protección total de la obra y del creador.
+      </p>
+      <ul>
+        <li>Contratos inteligentes</li>
+        <li>Registro de obras y marcas</li>
+        <li>Contacto directo con abogados</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="layer">
+  <h2>Esto no es una app</h2>
+  <p>
+    Es una estructura.
+    Un sistema para que el artista deje de improvisar su carrera
+    y empiece a construirla.
+  </p>
+</section>
+
+<footer>
+  Support The Artist — Waitlist Preview
+</footer>
+
+<script>
+const layers = document.querySelectorAll('.layer');
+
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+  });
+},{threshold:0.15});
+
+layers.forEach(layer=>observer.observe(layer));
+</script>
+
+</body>
+</html>
